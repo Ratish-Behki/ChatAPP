@@ -52,8 +52,8 @@ app.use("/api/user", userRoute);
 app.use("/api/avatar", avatarRoute);
 console.log(4);
 // Server configuration
-const port = process.env.PORT || 4000;  // Use environment port or default to 4000
-const server = app.listen(port, '0.0.0.0', () => 
+const port = process.env.PORT || 4000;  // Use environment port or default to 8000
+const server = app.listen(port, () => 
     console.log(`Application Running on Port ${port}`)
 );
 
